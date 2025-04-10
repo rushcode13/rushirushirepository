@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Nav bar</title>
+<style>
+body{
+  font-family:Handwriting;
+}
+.topnav{
+  overflow:hidden;
+    background-color:#030a21;
+}
+.topnav a{
+  float:left;
+  color:#7068bd;
+  text-align:center;
+  padding:14px 16px;
+    text-decoration:none;
+  font-size:20px;
+}
+.topnav a:hover{
+  background-color:#28c1a9;
+    color:black;
+}
+.topnav a.active{
+  background-color:#66caff;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+<div class="topnav">
+<a class="active" href="#home">Home</a>
+<br>
+<a href="info.html"> information </a>
+<br>
+<a href="#"> gallery</a>
+<br>
+<a href="#" >contact us</a>
+<br>
+</div>
+<body>
+
+<section>
+<img class="mySlides"  src="holi image.jpg"   style="height:500px;">
+<img class="mySlides"  src="https://utsav.gov.in/public/festival_top/1659608853.jpg"   style="height:500px;">
+<img class="mySlides"  src="https://www.podareducation.org/Uploads/content/2024-3-22--14-40-21-311_The-Story-Behind-Why-Do-We-Celebrate-the-Holi-Festival-banner.jpg"   style="height:500px;">
+<img class="mySlides"  src="https://img.jagranjosh.com/images/2024/September/592024/ganesh-chaturthi.jpg"   style="height:500px;">
+<img class="mySlides"  src="https://www.lordhanuman.org/wp-content/uploads/2024/01/Dussehra-Vijayadashmi-Dasara-Navaratri-%E0%A4%A8%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF-%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A5%8C%E0%A4%B9%E0%A4%BE%E0%A4%B0-%E0%A4%A6%E0%A4%B6%E0%A4%B9%E0%A4%B0%E0%A4%BE-%E0%A4%A6%E0%A4%B6%E0%A4%B9%E0%A4%B0%E0%A4%BE-%E0%A4%B0%E0%A4%BE%E0%A4%B5%E0%A4%A3%E0%A4%A6%E0%A4%B9%E0%A4%A8-%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%B6%E0%A4%AE%E0%A5%80-.jpg"   style="height:500px;">
+<img class="mySlides"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0N_oHPl3amef3CNf6844wOv4LnyW3JBeFzA&s"   style="height:500px;">
+</section>
+<script>
+var myIndex=0;
+carousel();
+function carousel() {
+  var i;
+  var x=document.getElementsByClassName("mySlides");
+  for(i=0; myIndex < x.length;  i++){
+    x[i].style.display="none";
+  }
+  myIndex++
+  if(myIndex>x.length){
+    myIndex=1;
+  }
+  x[myIndex-1].style.display="block";
+  setTimeout(carousel,3000);
+}
+</script>
+</body>
+</html>
