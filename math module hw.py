@@ -1,0 +1,11 @@
+import math
+flr=float(input("enter a decimal number"))
+flr1=math.floor(flr)
+print(flr1)
+c=float(input("enetr a decimal number you want to round off to a whole no."))
+c1=math.ceil(c)
+print(c1)
+gcd1=int(input("enter 1 of the numbers you want to find the gratest common divisor of"))
+gcd2=int(input("enter the second number you want to find the gratest common divisor of"))
+gcd=math.gcd(gcd1,gcd2)
+print(gcd)
